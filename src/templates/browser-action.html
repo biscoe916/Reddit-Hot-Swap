@@ -1,0 +1,45 @@
+<html>
+<head>
+  <style>
+    body {
+      background-color: white;
+    }
+    #menu {
+      width: 150px;
+      display: block;
+      background-color: white;
+    }
+    .menu-item {
+      height: 30px;
+      color: black;
+      font-family: arial;
+      line-height: 30px;
+      text-align: center;
+      border-radius: 3px;
+      border: 1px solid rgb(200,200,200);
+      margin: 5px;
+      cursor: pointer;
+      opacity: .7;
+    }
+
+    .menu-item:not(.selected):hover {
+      opacity: 1;
+      background-color: rgb(220,220,220);
+    }
+
+    .selected {
+      color: white;
+      font-weight: bold;
+      opacity: 1;
+      background-color: rgb(120,120,200);
+    }
+  </style>
+</head>
+<body>
+  <div id="menu">
+    <div id="old-button" class="menu-item"> Use "Old" reddit </div>
+    <div id="new-button" class="menu-item selected"> Use "New" reddit </div>
+  </div>
+<script src="../js/browser-action.reddithotswap.js"></script>
+</body>
+</html>
