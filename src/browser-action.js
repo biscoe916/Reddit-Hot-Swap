@@ -25,6 +25,7 @@ function setSiteVersionSetting(mode, evt) {
 }
 
 function setButtons(mode) {
+  console.log('Set Buttons: ', mode);
   let oldButton = $('#old-button');
   let newButton = $('#new-button');
 
