@@ -40,9 +40,12 @@ function redirector(details) {
 
   if (parsedUrl.host.indexOf('reddit.com') >= '0') {
     return { redirectUrl: `https://${siteVersion === 'new' ? 'www' : 'old'}.reddit.com/hot` };
+<<<<<<< HEAD
   } else if (parsedUrl.host.indexOf('www.amazon.com') >= 0) {
     return { redirectUrl: `https://smile.amazon.com/` };
+=======
+>>>>>>> 76b9fd5b40f8cb99ed74091aef734c162a0f6cd8
   }
 }
 
-chrome.webRequest.onBeforeRequest.addListener(redirector, { urls: ['*://*.reddit.com/*', '*://*.amazon.com/*'] }, ["blocking"]);
+chrome.webRequest.onBeforeRequest.addListener(redirector, { urls: ['*://*.reddit.com/*'] }, ["blocking"]);
