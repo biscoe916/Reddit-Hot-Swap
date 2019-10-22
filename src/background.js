@@ -40,7 +40,7 @@ function redirector(details) {
 
   if (parsedUrl.host.indexOf('reddit.com') >= '0') {
     return { redirectUrl: `https://${siteVersion === 'new' ? 'www' : 'old'}.reddit.com/hot` };
-  } else if (parsedUrl.host.indexOf('amazon.com') >= 0) {
+  } else if (parsedUrl.host.indexOf('www.amazon.com') >= 0) {
     return { redirectUrl: `https://smile.amazon.com/` };
   }
 }
