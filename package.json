@@ -26,7 +26,7 @@
   },
   "homepage": "https://github.com/biscoe916/RedditHotSwap#readme",
   "dependencies": {
-    "jquery": "^3.3.1",
+    "jquery": "^3.5.0",
     "url-parse": "^1.4.0"
   },
   "devDependencies": {
